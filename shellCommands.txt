@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Run the command
+python Challenge2Main.py | tee Challenge2MainLog.log
+
+# Run the command in the background
+nohup python Challenge2Main.py > Challenge2MainLog.log
+
+# Find out the process of any python scripts
+ps -A | grep python
+
+# watch what is happening to output.txt
+tail -f Challenge2MainLog.log
+
+# Go to function directory
+cd GitHub/phdThesis/Development/Udacity/Challenge2/
+
+# Go to results directory
+cd Machine\ Learning\ Data/Results/Current\ Test/
+
+# Update the repos
+git pull
