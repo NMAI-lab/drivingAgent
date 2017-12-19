@@ -18,7 +18,7 @@ from generateAndTestModelFunction import generateAndTestModel
 # function protoype: 
 # generateAndTestModel(dataSet, modelVersion, vanillaGenerator)
 
-workingDirectoryName = '20171208-EvaluationTrial-1'
+workingDirectoryName = 'workingDirectory'
 
 #generateAndTestModel('UdiacityChallenge2', 'B', True)
 #generateAndTestModel('UdiacityChallenge2', 'B', False)
@@ -29,7 +29,7 @@ workingDirectoryName = '20171208-EvaluationTrial-1'
 #generateAndTestModel('UdiacityChallenge2', 'A', True)
 #generateAndTestModel('UdiacityChallenge2', 'A', False)
 #
-#generateAndTestModel('MNIST', 'A', True)
+generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirectoryName)
 #generateAndTestModel('MNIST', 'A', False)
 #
 #generateAndTestModel('MNIST', 'B', True)
@@ -39,4 +39,4 @@ workingDirectoryName = '20171208-EvaluationTrial-1'
 #generateAndTestModel('MNIST', 'C', False)
 
 #generateAndTestModel('MNIST_Regression', 'A', False)
-generateAndTestModel('UdiacityChallenge2_Classification', 'B', False)
+#generateAndTestModel('UdiacityChallenge2_Classification', 'B', False)
