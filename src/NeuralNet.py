@@ -70,10 +70,9 @@ def validateModelInputOutputShape(model, inputShape, outputShape):
     modelOutputDimension = modelOutputTensor.get_shape()
     modelOutputDimensionAsList = modelOutputDimension.as_list()
     modelOutputDimensionAsList.pop(0)
-    outputsValid = (tuple(modelOutputDimensionAsList) == outputShape)
+    outputsValid = (modelOutputDimensionAsList[0] == outputShape)
     
-#    return (inputsValid and outputsValid)
-    return True
+    return (inputsValid and outputsValid)
 
 # Define model architecture
 def defineModel(xShape, yShape, regression, modelVersion):
