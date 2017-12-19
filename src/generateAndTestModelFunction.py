@@ -46,7 +46,7 @@ def generateAndTestModel(dataSet,
         # Do something about the directory
         resultFolderName = workingDirectory
 
-    dataDirectoryPath = '../../../../../Machine Learning Data/'
+    dataDirectoryPath = '../../../Machine Learning Data/'
     resultDirectoryPath = dataDirectoryPath + 'Results/Current Test/' + resultFolderName + '/'
     modelFileName = resultDirectoryPath + 'model.h5' # Model storage file
     modelImageFileName = resultDirectoryPath + 'model.png'
