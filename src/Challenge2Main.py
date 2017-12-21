@@ -14,6 +14,7 @@ if this data and then test the effectiveness using the remaining data.
 # https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file
 
 from generateAndTestModelFunction import generateAndTestModel
+from postProcessing import postProcessImages
 
 # function protoype: 
 # generateAndTestModel(dataSet, modelVersion, vanillaGenerator)
@@ -29,7 +30,7 @@ workingDirectoryName = 'workingDirectory'
 #generateAndTestModel('UdiacityChallenge2', 'A', True)
 #generateAndTestModel('UdiacityChallenge2', 'A', False)
 #
-generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirectoryName)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirectoryName)
 #generateAndTestModel('MNIST', 'A', False)
 #
 #generateAndTestModel('MNIST', 'B', True)
@@ -40,3 +41,7 @@ generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirector
 
 #generateAndTestModel('MNIST_Regression', 'A', False)
 #generateAndTestModel('UdiacityChallenge2_Classification', 'B', False)
+
+path = '../../../Machine Learning Data/Results/Current Test/workingDirectory/'
+fileType = '.jpg'
+postProcessImages(path, 'testImage', fileType, 0.1, 0.15)
