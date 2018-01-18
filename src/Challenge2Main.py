@@ -21,14 +21,14 @@ from postProcessing import postProcessImages
 
 workingDirectoryName = 'workingDirectory'
 
-#generateAndTestModel('UdiacityChallenge2', 'B', True)
-#generateAndTestModel('UdiacityChallenge2', 'B', False)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'B', True)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'B', False)
 #
-#generateAndTestModel('UdiacityChallenge2', 'C', True)
-#generateAndTestModel('UdiacityChallenge2', 'C', False, workingDirectoryName)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'C', True)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'C', False, workingDirectoryName)
 #
-#generateAndTestModel('UdiacityChallenge2', 'A', True)
-#generateAndTestModel('UdiacityChallenge2', 'A', False)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'A', True)
+#generateAndTestModel('UdiacityChallenge2_Regression', 'A', False)
 #
 generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirectoryName)
 #generateAndTestModel('MNIST', 'A', False)
