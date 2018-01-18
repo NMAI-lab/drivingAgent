@@ -26,7 +26,7 @@ def splitTrainingTestingValidationData(x, y):
     testingRatio = 0.3    # Percentage of the data used for testing and validation
     (xTrain, xTest, yTrain, yTest) = splitData(x, y, testingRatio)
     (xValidate, yValidate, xTest, yTest) = splitValidationTest(xTest, yTest)
-    return (xTrain, yTrain, xValidate, yValidate, xTest, xTest)    
+    return (xTrain, yTrain, xValidate, yValidate, xTest, yTest)    
 
 def splitValidationTest(x, y):
     validationTestingRatio = 0.5
