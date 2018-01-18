@@ -30,7 +30,7 @@ workingDirectoryName = 'workingDirectory'
 #generateAndTestModel('UdiacityChallenge2', 'A', True)
 #generateAndTestModel('UdiacityChallenge2', 'A', False)
 #
-#generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirectoryName)
+generateAndTestModel('UdiacityChallenge2_Regression', 'A', True, workingDirectoryName)
 #generateAndTestModel('MNIST', 'A', False)
 #
 #generateAndTestModel('MNIST', 'B', True)
